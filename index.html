@@ -21,9 +21,16 @@
 
 <body>
 
-<audio autoplay loop>
-<source src="music/nhac.mp3" type="audio/mp3">
+<audio id="bgmusic" loop>
+<source src="music/nhac.mp3" type="audio/mpeg">
 </audio>
+
+<script>
+window.addEventListener("click", function () {
+    var audio = document.getElementById("bgmusic");
+    audio.play();
+});
+</script>
 
 <div id="main">
 
@@ -34,7 +41,7 @@
 
 <font color="#ff4d6d">
 
-<span class="say">Chào em </span><br>
+<span class="say">Chào Thảo </span><br>
 <span class="say"></span><br>
 
 <span class="say">Ngày 8/3 chúc một nửa thế giới luôn thành công trong cuộc sống!</span><br>
